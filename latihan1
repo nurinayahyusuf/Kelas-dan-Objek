@@ -1,0 +1,53 @@
+class Luas(object):
+   def __init__(self, p, r):
+      self.phi = p
+      self.jarijari = r
+    
+   def hitungLuas(self):
+      return self.phi * self.jarijari * self.jarijari
+
+def main():
+   luas1 = Luas(3.14, 10)
+
+   print('Luas Lingkaran 1\n')
+   print('phi\t        : ', luas1.phi)
+   print('Jari-jari\t: ', luas1.jarijari)
+   print('Luas\t        = ', luas1.hitungLuas())
+
+   
+   luas2 = Luas(3.14, 14)
+
+  
+   print("\nLuas Lingkaran 2\n")
+   print("phi\t        : ", luas2.phi)
+   print("Jari-jari\t: ", luas2.jarijari)
+   print("Luas\t        = ", luas2.hitungLuas())
+   
+if __name__ == "__main__":
+   main()
+   
+class Keliling(object):
+   def __init__(self, p, r):
+      self.phi = p
+      self.jarijari = r
+    
+   def hitungKeliling(self):
+      return 2 * self.phi * self.jarijari
+
+def main():
+	kel1 = Keliling(3.14, 9)
+	
+	print('\nKeliling Lingkaran 1\n')
+	print('phi\t        : ', kel1.phi)
+	print('Jari-jari\t: ', kel1.jarijari)
+	print('Keliling\t= ', kel1.hitungKeliling())
+	
+	kel2 = Keliling(3.14,7)
+
+	print("\nKeliling Lingkaran 2\n")
+	print("phi\t        : ", kel2.phi)
+	print("Jari-jari\t: ", kel2.jarijari)
+	print("Keliling\t= ", kel2.hitungKeliling())
+
+if __name__ == "__main__":
+   main()
